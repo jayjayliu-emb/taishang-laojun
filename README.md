@@ -4,6 +4,15 @@
 
 「太上老君·AI炼丹炉」是一套教 AI 帮内容创作者做事的技能包（Skills）。把创作者"柳爷"的真实爆款复盘（50万播放/88万播放等真实案例）炼成可执行的判断标准，任何支持 Skills 的智能体安装后，在对话框里直接就能用。
 
+## 一图看懂炼丹炉
+
+**点击下方链接，直接看交互式全景图**（浏览器打开，点模块展开细节）：
+
+- ▶ **[在线预览 · 交互式思维导图](https://raw.githack.com/liuhaisi2026212-maker/taishang-laojun/main/docs/mindmap/preview.html)**
+- ▶ **[备用预览链接](https://htmlpreview.github.io/?https://raw.githubusercontent.com/liuhaisi2026212-maker/taishang-laojun/main/docs/mindmap/preview.html)**
+
+（本地文件也可以直接打开：`docs/mindmap/炼丹炉全景图.html`）
+
 ## 它能做什么
 
 把这条视频喂进炉子（视频链接/逐字稿/一句"我想拍点什么"），输出：
