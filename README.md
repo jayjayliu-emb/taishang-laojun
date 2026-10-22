@@ -2,6 +2,10 @@
 
 **先认识你，再帮你炼丹。教的是创作思路，让你做出自己的内容。**
 
+## [👉 直接打开交互式全景图，无需下载](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)
+
+点击模块可展开方法和适配示例，手机、电脑浏览器都可访问。
+
 这套技能面向想做自媒体的小白，也帮助已有内容的创作者解决某一步的问题。来自柳爷对自己作品的口述复盘：怎样选参考、想选题、用现场素材、安排开头和证据、写成自己的话，再从实际反馈调整。
 
 面向不同赛道，不只 AI；也支持不变现的生活记录。经验不等于所有赛道均已验证，不承诺播放、涨粉或收入。
@@ -35,7 +39,7 @@
 
 **支持技能文件的智能体：** 整个仓库作为项目，或一起安装 skills 下七个子目录（含参考文件）。详见[安装说明](docs/install-guide.md)。不假定所有宿主都兼容，实测边界见[验证说明](docs/validation.md)。
 
-方法阅读：[配方全集](docs/formulas.md)；[访谈框架](docs/flavor-interview.md)；[去AI味](docs/deai-rulebook.md)。[本地全景图](docs/mindmap/炼丹炉全景图.html)可下载后在浏览器打开；[在线预览](https://raw.githack.com/liuhaisi2026212-maker/taishang-laojun/main/docs/mindmap/preview.html)展示远程 main，未发布的本地修复不会出现在该页面。
+方法阅读：[配方全集](docs/formulas.md)；[访谈框架](docs/flavor-interview.md)；[去AI味](docs/deai-rulebook.md)。[本地全景图](docs/mindmap/炼丹炉全景图.html)可下载后在浏览器打开；[在线预览](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)展示远程 main，未发布的本地修复不会出现在该页面。
 
 ## 方法来源与维护
 
