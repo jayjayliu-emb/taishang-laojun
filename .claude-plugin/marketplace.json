@@ -1,16 +1,17 @@
 {
   "name": "taishang-laojun",
-  "description": "太上老君·AI炼丹炉 —— 把别人的爆款炼成你自己的视频。选材/看火/开炉/收丹/回炉/成丹 六模块内容创作技能包。",
-  "version": "0.1.0",
-  "author": "柳爷",
-  "license": "CC-BY-NC-4.0",
-  "skills": [
-    "skills/taishang-laojun",
-    "skills/tslj-select",
-    "skills/tslj-idea",
-    "skills/tslj-open",
-    "skills/tslj-title",
-    "skills/tslj-script",
-    "skills/tslj-monetize"
-  ]
+  "owner": {
+    "name": "柳爷"
+  },
+  "plugins": [
+    {
+      "name": "taishang-laojun",
+      "source": "./",
+      "description": "自媒体创作判断与按需调度",
+      "version": "0.2.0"
+    }
+  ],
+  "metadata": {
+    "description": "太上老君炼丹炉：按用户资源与创作阶段调度的自媒体工具箱"
+  }
 }

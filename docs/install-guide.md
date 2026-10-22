@@ -1,58 +1,50 @@
-# 安装指南：把炼丹炉装进你的智能体
+# 安装炼丹炉
 
-> 太上老君·AI炼丹炉 是一套**跨智能体**技能包。内容只维护一份（`skills/`），各家智能体各装各的入口。下面是每种装法。
+这是一套文本技能包，不内置视频下载器、剪辑器或模型服务。完整使用需要智能体能读取技能文件；普通聊天产品可使用自包含 Bot 文本，实际能力取决于宿主。
 
----
+## Codex：先用完整项目
 
-## 一、豆包 / Doubao Work（零适配，直接复制）
+下载/克隆整个仓库作为项目打开，输入“使用炼丹炉，我想拍视频但不知道拍什么”。根目录 AGENTS.md 指向总入口。已有稿件可直接给稿并说只改标题。
 
-豆包支持从本地 skills 目录发现技能。
+需要安装到其他项目时，把 `skills/` **下面的七个子文件夹**一并放进宿主配置的技能目录，保持七个文件夹为同级。每个文件夹中的 references 也必须一起保留；不要再套一层 skills 文件夹。不得覆盖已有同名自定义版本，先备份。只装总入口不够完整使用。
 
-1. 把 `skills/` 下的全部目录（`taishang-laojun`、`tslj-select`、`tslj-idea`、`tslj-open`、`tslj-title`、`tslj-script`、`tslj-monetize`）复制到豆包的技能目录（`.doubaowork/agent_mode/workspace/.user_skills/` 或客户端对应位置）。
-2. 重启豆包。之后你只要说"帮我选题/写标题/改开头/想变现"，豆包就会自动路由到对应模块。
-3. 不想装整套？把 `skills/taishang-laojun/SKILL.md` 单独复制进去，也有完整路由能力（模块缺了它会提示）。
+## Claude Code
 
-## 二、Claude Code（加 marketplace）
+在当前修复版完整仓库中可先用本地方式（无需上传）：
 
-1. 项目里已带 `.claude-plugin/marketplace.json`，在 Claude Code 中把本仓库作为 marketplace 添加：
-   ```bash
-   claude plugin marketplace add <本仓库地址>
-   claude plugin install tslj@<本仓库地址>
-   ```
-2. 或把 `skills/` 目录复制进 `~/.claude/skills/`。
-3. Claude Code 会读取 `AGENTS.md` 作为项目入口规则。
+```sh
+claude plugin marketplace add .
+claude plugin install taishang-laojun@taishang-laojun
+```
 
-## 三、Codex（读 AGENTS.md）
+仓库发布本修复版后，远程方式为：
 
-Codex 支持项目级规则文件。把本仓库作为项目打开即可——Codex 会读取根目录 `AGENTS.md`，按其中规则调用 `skills/` 里的技能。
+```sh
+claude plugin marketplace add liuhaisi2026212-maker/taishang-laojun
+claude plugin install taishang-laojun@taishang-laojun
+```
 
-## 四、Grok / 其他支持 Skills 的 Agent
+也可把七个子文件夹复制到 Claude Code 配置的 skills 目录。完整项目使用 CLAUDE.md 入口，不能假设它自动读取 AGENTS.md。
 
-- 支持 Skills 目录的 Agent：复制 `skills/` 即可，零适配。
-- 不支持 Skills、只支持 system prompt 的 Agent/Bot 平台（Grok 生成 bot、扣子等）：用 `bot-prompt/liuye-bot-prompt.md` —— 整段粘贴成 system prompt，它就变成炼丹炉。
+参考：[Claude marketplace 文档](https://code.claude.com/docs/en/plugin-marketplaces)。本地结构校验命令：`claude plugin validate .claude-plugin/marketplace.json` 和 `claude plugin validate .claude-plugin/plugin.json`。结构通过不等于真实宿主使用验收。
 
-## 五、人读版
+## 豆包、WorkBuddy、Grok 等
 
-不装任何东西，直接看：
-- 方法全集：`docs/formulas.md`
-- 直播/视频/沙龙讲稿：`docs/presentation-outline.md`
-- 一图看懂：`docs/mindmap/炼丹炉全景图.html`（浏览器打开）
+本版不声称这些客户端自动发现技能的路径已实测。若客户端明确支持导入 Skills，按其说明导入全部七个目录并检查能否读取引用文件；没有这个能力时，用下一节的 Bot 版。不得仅凭生成了三个选题判断安装成功。
 
----
+## 只想给一个智能体一份文件
 
-## 验证装好了没有
+使用 `bot-prompt/liuye-bot-prompt.md`。它包含总入口、六模块和必要参考正文，不依赖仓库文件。粘贴到支持的系统提示词位置，或作为参考文件附上并明确要求按它工作。宿主若截断长度、不能遵循文件或不支持持久上下文，效果可能受限；普通附件不等于系统级安装。
 
-对任意智能体说一句话：**"我想拍个视频但不知道拍什么"**。
-- 装好了：它会进入"看火"模块，出 3 个选题菜单让你选。
-- 没装上：它只会泛泛回答"你可以拍你擅长的……"——这时检查安装位置。
+## 验证是否可用
 
-## 常见问题
+- 新手无材料：先问一个容易回答的具体问题，不虚构经历。
+- 给定稿件只改一个标题：只做该任务，不强制重访谈。
+- 提供素材要求完整稿：返回正文，不在开炉与回炉间来回转交。
+- 核对智能体实际读取的技能与引用文件；有缺失就补包，不用猜测性内容掩盖。
 
-**Q：只装总入口够吗？**
-够。总入口会按状态路由，缺模块时会告诉你该用哪个模块、为什么。
+本地自动检查运行 `python3 scripts/check_package.py`；当前测试范围见 `docs/validation.md`。语料、个人底味不需要上传本仓库。
 
-**Q：想给客户用但客户不装技能怎么办？**
-用 Bot 版（`bot-prompt/`）——任何平台粘贴即用，零门槛。
+## 许可
 
-**Q：能商用吗？**
-项目是 CC BY-NC 4.0（署名-非商业性使用）。你自己用、给客户做服务没问题；不能把技能包本身拿去转卖或商用分发。
+本体沿用 CC BY-NC 4.0，第三方部分见相应声明。涉及收费客户服务或其他商业用途时，不能把本指南当额外授权；需按许可与权利人明确授权判断。输出内容的权利和使用场景另行判断。
