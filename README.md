@@ -2,9 +2,9 @@
 
 **先认识你，再帮你炼丹。教的是创作思路，让你做出自己的内容。**
 
-## [👉 直接打开交互式全景图，无需下载](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)
+[![太上老君炼丹炉全景图：认识使用者，按需调用六模块，结合本人底味与反馈复盘](docs/mindmap/overview.svg)](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)
 
-点击模块可展开方法和适配示例，手机、电脑浏览器都可访问。
+*上图可直接查看；点击图片进入可展开的交互版。*
 
 这套技能面向想做自媒体的小白，也帮助已有内容的创作者解决某一步的问题。来自柳爷对自己作品的口述复盘：怎样选参考、想选题、用现场素材、安排开头和证据、写成自己的话，再从实际反馈调整。
 
