@@ -1,0 +1,22 @@
+name: package-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Run package check
+        run: python scripts/check_package.py
+      - name: Run portability tests
+        run: python scripts/test_portability.py
