@@ -14,7 +14,7 @@ def body(path):
 def render(bot=False):
     sources = [ROOT / 'skills' / name / 'SKILL.md' for name in ORDER]
     sources += [ROOT / 'skills/taishang-laojun/references' / (name + '.md') for name in
-                ['flavor-interview', 'material-card', 'deai-rulebook', 'feedback-review', 'creator-perspective']]
+                ['flavor-interview', 'material-card', 'deai-rulebook', 'edit-six-cuts', 'feedback-review', 'creator-perspective']]
     parts = []
     for path in sources:
         def link(match):
