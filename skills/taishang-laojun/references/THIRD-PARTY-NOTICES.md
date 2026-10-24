@@ -84,3 +84,9 @@ SOFTWARE.
 「太上老君·AI炼丹炉」本体（方法内容、柳爷案例、炼丹炉结构）以 CC BY-NC 4.0 开源，见根目录 LICENSE。
 
 以上两份 MIT 版权行于2026-10-22对照上游 LICENSE 核对。dbskill 的结构借鉴与本仓库许可见根目录 LICENSE、README；私人语料不随技能分发。
+
+## 4. 本轮方法启发（0.4.0）
+
+经历提炼、轻量素材积累与持续复盘的补强，参考了 Dan Koe 的 Turning Your Experiences Into Content、The Content Synthesis System、Iterating Your Content Flow 等课程章节；维护验收思路亦参考且曼 AI 产品课的用户访谈与效果评测内容。参考依据为用户提供的未经人工精校转写，未逐句核对原始音视频。
+
+本轮为结合柳爷方法独立撰写的操作规则，不附课程转写、课件或原模板，不将外部作者经历标成柳爷成果，也不声称获得课程公开分发授权或作者背书。课程启发不等于这些规则已在所有赛道验证有效。
