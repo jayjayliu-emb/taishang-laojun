@@ -1,56 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1250" viewBox="0 0 1200 1250" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1438" viewBox="0 0 1200 1438" role="img" aria-labelledby="title desc">
 <title id="title">太上老君AI炼丹炉：创作方法全景图</title>
-<desc id="desc">先认识使用者，按当前任务调度选材、看火、开炉、回炉、收丹、成丹六模块，结合个人底味和真实反馈复盘。</desc>
-<rect width="1200" height="1250" rx="24" fill="#101725"/>
+<desc id="desc">AI 先下判断、用户校准；七条底层判断贯穿选材、看火、开炉、回炉、收丹、成丹六个模块。</desc>
+<rect width="1200" height="1438" rx="24" fill="#101725"/>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
-
 <text x="44" y="66" font-size="42" fill="#ffd36a" font-weight="700">太上老君 · AI炼丹炉</text>
-<text x="44" y="108" font-size="25" fill="#d4dce9" font-weight="400">教创作思路，帮助你做出自己的内容</text>
-<text x="44" y="146" font-size="22" fill="#9facbf" font-weight="400">不同赛道都可以开始 · 按需选模块，不必从头走完</text>
-<rect x="40" y="180" width="1120" height="125" rx="16" fill="#192439" stroke="#ffd36a"/>
-<text x="64" y="219" font-size="28" fill="#ffd36a" font-weight="700">先认识你，再帮你炼丹</text>
-<text x="64" y="255" font-size="24" fill="#d4dce9" font-weight="400">你做过什么？有什么素材？想给谁看？现在卡在哪一步？</text>
-<text x="64" y="285" font-size="21" fill="#9facbf" font-weight="400">一次聊一个具体问题；已有稿只改标题，就直接改标题。</text>
-<text x="44" y="355" font-size="25" fill="#eef3fc" font-weight="600">总入口：读已有材料 → 判断缺哪一步 → 调用必要模块 → 完成交付</text>
-<rect x="40" y="390" width="545" height="197" rx="16" fill="#192439" stroke="#ff898d"/>
-<text x="62" y="429" font-size="28" fill="#ff898d" font-weight="650">01  选材 · 掂量三关</text>
-<text x="62" y="466" font-size="22" fill="#d4dce9" font-weight="400">复读：口吻能否自然表达</text>
-<text x="62" y="497" font-size="22" fill="#d4dce9" font-weight="400">观众：为什么愿意看、能得到什么</text>
-<text x="62" y="528" font-size="22" fill="#d4dce9" font-weight="400">替换：换成你的条件还能成立吗</text>
-<text x="62" y="559" font-size="22" fill="#ff898d" font-weight="400">交付：借鉴机制与适配建议</text>
-<rect x="615" y="390" width="545" height="197" rx="16" fill="#192439" stroke="#ffbd72"/>
-<text x="637" y="429" font-size="28" fill="#ffbd72" font-weight="650">02  看火 · 选题判断</text>
-<text x="637" y="466" font-size="22" fill="#d4dce9" font-weight="400">人群、认知、钩子、证据、上手成本</text>
-<text x="637" y="497" font-size="22" fill="#d4dce9" font-weight="400">从真实经历、参考、热点和反馈找方向</text>
-<text x="637" y="528" font-size="22" fill="#d4dce9" font-weight="400">推荐时说清：为什么是你能拍的</text>
-<text x="637" y="559" font-size="22" fill="#ffbd72" font-weight="400">交付：少量具体方向与选择理由</text>
-<rect x="40" y="609" width="545" height="197" rx="16" fill="#192439" stroke="#78dcad"/>
-<text x="62" y="648" font-size="28" fill="#78dcad" font-weight="650">03  开炉 · 开头与结构</text>
-<text x="62" y="685" font-size="22" fill="#d4dce9" font-weight="400">场景服务目的，开头紧接真实证据</text>
-<text x="62" y="716" font-size="22" fill="#d4dce9" font-weight="400">口播、画面、标题分担信息</text>
-<text x="62" y="747" font-size="22" fill="#d4dce9" font-weight="400">五段式按需用，时长服从内容</text>
-<text x="62" y="778" font-size="22" fill="#78dcad" font-weight="400">交付：开头、结构与必要拍摄建议</text>
-<rect x="615" y="609" width="545" height="197" rx="16" fill="#192439" stroke="#c8a4ff"/>
-<text x="637" y="648" font-size="28" fill="#c8a4ff" font-weight="650">04  回炉 · 完整成稿</text>
-<text x="637" y="685" font-size="22" fill="#d4dce9" font-weight="400">逐字稿是弹药库，借观点不照搬</text>
-<text x="637" y="716" font-size="22" fill="#d4dce9" font-weight="400">用自己的素材组织逻辑递进</text>
-<text x="637" y="747" font-size="22" fill="#d4dce9" font-weight="400">保留本人表达，不编经历和数字</text>
-<text x="637" y="778" font-size="22" fill="#c8a4ff" font-weight="400">交付：完整稿或指定段落的修改</text>
-<rect x="40" y="828" width="545" height="197" rx="16" fill="#192439" stroke="#8ec9ff"/>
-<text x="62" y="867" font-size="28" fill="#8ec9ff" font-weight="650">05  收丹 · 标题</text>
-<text x="62" y="904" font-size="22" fill="#d4dce9" font-weight="400">跟我有关：认人、认事、认心</text>
-<text x="62" y="935" font-size="22" fill="#d4dce9" font-weight="400">补全信息、制造期待、承担总结</text>
-<text x="62" y="966" font-size="22" fill="#d4dce9" font-weight="400">先有确定内容，再选适合的标题</text>
-<text x="62" y="997" font-size="22" fill="#8ec9ff" font-weight="400">交付：用户需要的标题与理由</text>
-<rect x="615" y="828" width="545" height="197" rx="16" fill="#192439" stroke="#ffd36a"/>
-<text x="637" y="867" font-size="28" fill="#ffd36a" font-weight="650">06  成丹 · 变现承接</text>
-<text x="637" y="904" font-size="22" fill="#d4dce9" font-weight="400">只在用户明确有商业目标时使用</text>
-<text x="637" y="935" font-size="22" fill="#d4dce9" font-weight="400">预期用户与实际需求分开看</text>
-<text x="637" y="966" font-size="22" fill="#d4dce9" font-weight="400">点赞、咨询、付费不能混为一谈</text>
-<text x="637" y="997" font-size="22" fill="#ffd36a" font-weight="400">交付：可兑现的小范围验证路径</text>
-<rect x="40" y="1065" width="1120" height="135" rx="16" fill="#192439" stroke="#34445c"/>
-<text x="63" y="1105" font-size="28" fill="#eef3fc" font-weight="650">按需使用：经历提炼 + 素材卡 + 反馈复盘</text>
-<text x="63" y="1143" font-size="23" fill="#d4dce9" font-weight="400">像你本人说话；不为去AI味编事实。发过后比较目标与实际，再调整。</text>
-<text x="63" y="1178" font-size="21" fill="#9facbf" font-weight="400">有情、有趣、有人、有事，不必四项齐全。方法是判断工具，不是流量保证。</text>
-<text x="40" y="1230" font-size="20" fill="#9facbf" font-weight="400">点击此图进入可展开的交互版 · 也可直接阅读下方使用说明</text>
-</g></svg>
+<text x="44" y="106" font-size="23" fill="#d4dce9" font-weight="400">把别人的爆款、你的经历、手边的场景，炼成只属于你的内容</text>
+<rect x="40" y="136" width="1120" height="96" rx="16" fill="#192439" stroke="#ffd36a"/>
+<text x="64" y="174" font-size="27" fill="#ffd36a" font-weight="700">AI 先下判断，你来校准</text>
+<text x="64" y="210" font-size="21" fill="#d4dce9" font-weight="400">每次落到一件今天能做的事；换个人还成立的建议，就是泛货，重做。</text>
+<text x="44" y="268" font-size="25" fill="#eef3fc" font-weight="600">炉心：七条底层判断（每个模块都从这里推）</text>
+<rect x="40" y="290" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="58" y="317" font-size="21" fill="#ffd36a" font-weight="650">1. 破冰先于一切</text>
+<text x="58" y="341" font-size="16" fill="#b8c3d6" font-weight="400">陌生人只给你一两秒，先让他感兴趣，信任靠后面的证据挣</text>
+<rect x="610" y="290" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="628" y="317" font-size="21" fill="#ffd36a" font-weight="650">2. 观众在想什么</text>
+<text x="628" y="341" font-size="16" fill="#b8c3d6" font-weight="400">没意识到的痛点、对你的防御、一厢情愿的想象</text>
+<rect x="40" y="364" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="58" y="391" font-size="21" fill="#ffd36a" font-weight="650">3. 用事件衬托内核</text>
+<text x="58" y="415" font-size="16" fill="#b8c3d6" font-weight="400">直白说没人信，让观众从一件事里自己看出来</text>
+<rect x="610" y="364" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="628" y="391" font-size="21" fill="#ffd36a" font-weight="650">4. 判断力胜过教程</text>
+<text x="628" y="415" font-size="16" fill="#b8c3d6" font-weight="400">热点是载体，判断是内容；只露果，不穷尽</text>
+<rect x="40" y="438" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="58" y="465" font-size="21" fill="#ffd36a" font-weight="650">5. 钩子马上兑现</text>
+<text x="58" y="489" font-size="16" fill="#b8c3d6" font-weight="400">下一秒就用画面或事件接住，接住它的又是下一个钩子</text>
+<rect x="610" y="438" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="628" y="465" font-size="21" fill="#ffd36a" font-weight="650">6. 展示什么，吸引什么人</text>
+<text x="628" y="489" font-size="16" fill="#b8c3d6" font-weight="400">成品招要成品的，过程招学习者，忙碌招求职者</text>
+<rect x="40" y="512" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
+<text x="58" y="539" font-size="21" fill="#ffd36a" font-weight="650">7. 适合自己的才是兵器</text>
+<text x="58" y="563" font-size="16" fill="#b8c3d6" font-weight="400">对标、工具、表达都放进自己的条件里掂量</text>
+<rect x="40" y="612" width="550" height="206" rx="16" fill="#192439" stroke="#ff898d"/>
+<text x="62" y="650" font-size="26" fill="#ff898d" font-weight="650">01 选材 · 选兵器</text>
+<text x="62" y="688" font-size="18" fill="#d4dce9" font-weight="400">复读关：心里跟着念一句，像不像自己的话</text>
+<text x="62" y="719" font-size="18" fill="#d4dce9" font-weight="400">客户关：站在观众那边，说出他为什么看下去</text>
+<text x="62" y="750" font-size="18" fill="#d4dce9" font-weight="400">替换关：换成你的条件，意思和证据还在吗</text>
+<text x="62" y="792" font-size="18" fill="#ff898d" font-weight="400">交付：借哪个机制、换掉什么、最小试拍动作</text>
+<rect x="610" y="612" width="550" height="206" rx="16" fill="#192439" stroke="#ffbd72"/>
+<text x="632" y="650" font-size="26" fill="#ffbd72" font-weight="650">02 看火 · 选题决策链</text>
+<text x="632" y="688" font-size="18" fill="#d4dce9" font-weight="400">起点 → 观众最关心什么 → 你拿什么接住</text>
+<text x="632" y="719" font-size="18" fill="#d4dce9" font-weight="400">靠哪种吸引力：娱乐 / 帮助 / 实力 / 下危机</text>
+<text x="632" y="750" font-size="18" fill="#d4dce9" font-weight="400">会招来谁？开头的承诺拿什么兑现？</text>
+<text x="632" y="792" font-size="18" fill="#ffbd72" font-weight="400">交付：1–3 个私人定制方向，推荐一个</text>
+<rect x="40" y="836" width="550" height="206" rx="16" fill="#192439" stroke="#78dcad"/>
+<text x="62" y="874" font-size="26" fill="#78dcad" font-weight="650">03 开炉 · 开头与结构</text>
+<text x="62" y="912" font-size="18" fill="#d4dce9" font-weight="400">一句话里装几个好懂的信息，完成破冰</text>
+<text x="62" y="943" font-size="18" fill="#d4dce9" font-weight="400">勾证衔接，最好接成钩子链</text>
+<text x="62" y="974" font-size="18" fill="#d4dce9" font-weight="400">收尾给看完的理由和关注的理由，然后干脆结束</text>
+<text x="62" y="1016" font-size="18" fill="#78dcad" font-weight="400">交付：第一句、证据画面、推进、收尾和理由</text>
+<rect x="610" y="836" width="550" height="206" rx="16" fill="#192439" stroke="#c8a4ff"/>
+<text x="632" y="874" font-size="26" fill="#c8a4ff" font-weight="650">04 回炉 · 完整成稿</text>
+<text x="632" y="912" font-size="18" fill="#d4dce9" font-weight="400">逐字稿是弹药库，先存不急着改</text>
+<text x="632" y="943" font-size="18" fill="#d4dce9" font-weight="400">先有场景和目的，再翻弹药库找观点</text>
+<text x="632" y="974" font-size="18" fill="#d4dce9" font-weight="400">借观点不借脉络；AI 初稿按改稿六刀做减法</text>
+<text x="632" y="1016" font-size="18" fill="#c8a4ff" font-weight="400">交付：可以直接念的完整稿</text>
+<rect x="40" y="1060" width="550" height="206" rx="16" fill="#192439" stroke="#8ec9ff"/>
+<text x="62" y="1098" font-size="26" fill="#8ec9ff" font-weight="650">05 收丹 · 标题</text>
+<text x="62" y="1136" font-size="18" fill="#d4dce9" font-weight="400">标题不等于选题，剪完再想</text>
+<text x="62" y="1167" font-size="18" fill="#d4dce9" font-weight="400">补信息 / 给期待 / 替开头当“总”</text>
+<text x="62" y="1198" font-size="18" fill="#d4dce9" font-weight="400">跟我有关：认人、认事、认心，用陌生人的眼睛检查</text>
+<text x="62" y="1240" font-size="18" fill="#8ec9ff" font-weight="400">交付：需要几个给几个，每个说清“有关”在哪</text>
+<rect x="610" y="1060" width="550" height="206" rx="16" fill="#192439" stroke="#ffd36a"/>
+<text x="632" y="1098" font-size="26" fill="#ffd36a" font-weight="650">06 成丹 · 变现承接</text>
+<text x="632" y="1136" font-size="18" fill="#d4dce9" font-weight="400">点赞、咨询、成交分开看</text>
+<text x="632" y="1167" font-size="18" fill="#d4dce9" font-weight="400">预期用户 ≠ 实际用户：纠偏、顺势，或拒绝</text>
+<text x="632" y="1198" font-size="18" fill="#d4dce9" font-weight="400">一个能兑现的交付，只走平台允许的承接</text>
+<text x="632" y="1240" font-size="18" fill="#ffd36a" font-weight="400">交付：一个交付、承接路径、交付成本与观察点</text>
+<text x="44" y="1292" font-size="19" fill="#9facbf" font-weight="400">底味访谈：问决定，不问定义；你替用户总结，用户来确认</text>
+<text x="44" y="1326" font-size="19" fill="#9facbf" font-weight="400">反馈复盘：沿链条找第一个偏掉的环节，再选纠偏或顺势</text>
+<text x="44" y="1360" font-size="19" fill="#ffbd72" font-weight="400">底线：不编经历和数字 · 钩子要兑现 · 合规承接 · 不服务害人的需求</text>
+<text x="44" y="1404" font-size="16" fill="#6f7d93" font-weight="400">方法来自柳爷做内容的经验，不是流量保证。 点击图片进入可展开的交互版。</text>
+</g>
+</svg>

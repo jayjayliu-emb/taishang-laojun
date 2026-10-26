@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+import build_mindmap
 import build_views
 import check_package
 
@@ -29,8 +30,8 @@ class PortabilityTests(unittest.TestCase):
             root = Path(directory) / 'repo'
             shutil.copytree(build_views.ROOT, root, ignore=shutil.ignore_patterns('.git', '__pycache__'))
             expected = {name: (root / name).read_bytes() for name in
-                        ('docs/formulas.md', 'bot-prompt/liuye-bot-prompt.md')}
-            with patch.object(build_views, 'ROOT', root), patch.object(check_package, 'ROOT', root), \
+                        list(build_views.GENERATED) + list(build_mindmap.VIEWS)}
+            with patch.object(build_views, 'ROOT', root), \
                     patch.object(Path, 'open', gbk_open), patch('os.path.relpath', ntpath.relpath):
                 build_views.main()
                 check_package.check()

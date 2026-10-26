@@ -1,120 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-CN" style="margin:0;padding:0;">
+<html lang="zh-CN">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>太上老君·AI炼丹炉 全景图</title>
-<div style="width:100%;box-sizing:border-box;background:#1a1a2e;color:#eee;font-family:'PingFang SC','Microsoft YaHei',sans-serif;padding:24px;">
-  <div style="text-align:center;margin-bottom:6px;">
-    <div style="font-size:26px;font-weight:800;color:#ffd34d;letter-spacing:2px;">太上老君·AI炼丹炉</div>
-    <div style="font-size:14px;color:#9aa;margin-top:6px;">参考与自己的经历，都是炼丹的原料 —— 把你的选题喂进去，做出适合自己的内容</div>
-  </div>
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:18px;">
-    <div onclick="tgl(0)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #ff6b6b;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#ff6b6b;">① 选材 · 掂量三关</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">复读 / 客户 / 替换</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-    <div onclick="tgl(1)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #ffa94d;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#ffa94d;">② 看火 · 选题五要素</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">人群 / 认知 / 钩子 / 证据 / 上手成本</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-    <div onclick="tgl(2)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #51cf66;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#51cf66;">③ 开炉 · 五段式骨架</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">钩子→证据→承诺→条件→指令</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-    <div onclick="tgl(3)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #4dabf7;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#4dabf7;">④ 收丹 · 跟我有关三源</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">认人 / 认事 / 认心</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-    <div onclick="tgl(4)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #cc99ff;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#cc99ff;">⑤ 回炉 · 文案转写</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">弹药库 → 场景选稿 → 借观点不借脉络</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-    <div onclick="tgl(5)" style="width:280px;min-height:120px;box-sizing:border-box;background:#16213e;border:2px solid #ffd34d;border-radius:14px;padding:14px;cursor:pointer;transition:all .2s;">
-      <div style="font-size:17px;font-weight:700;color:#ffd34d;">⑥ 成丹 · 变现承接</div>
-      <div style="font-size:14px;color:#ccc;margin-top:4px;">合规路径 · 预期≠实际 · 三层分离</div>
-      <div style="font-size:13px;color:#88a;margin-top:6px;">▼ 点击展开</div>
-    </div>
-  </div>
-  <div id="d0" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #ff6b6b;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#ff6b6b;">掂量三关（对标原料质检）</b><br>
-    ① <b>复读测试</b>：照着他的话念一遍——别扭时先换表达；没有本人样本就待试读。<br>
-    ② <b>客户测试</b>：假想目标观众，分别考虑——能帮我吗 / 我的粉丝爱看吗 / 我自己感兴趣吗。<br>
-    ③ <b>替换测试</b>：形式换成你的（口播+截图）能做到吗。<br>
-    <b style="color:#ff6b6b;">规则：三维分别判断 · 说明适配条件 · 不机械照搬或计分</b><br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#9fd;font-size:13px;">😀 <b>虚构情境示意（开餐厅的）</b>：刷到同行一条"新店开业，怎么让顾客排队"火了——你照着念一遍，像不像你说话的口气？你的客人听完会心动吗？能换成自己店里的镜头吗？根据三项判断确定哪些机制可借、哪些材料要换。</div>
-  </div>
-  <div id="d1" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #ffa94d;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#ffa94d;">选题五要素（判断角度）</b><br>
-    ① <b>人群广</b>：这个痛点在目标观众中是否常见（做生意的都愁客源——开餐厅的愁翻台、做培训的愁招生、做美业的愁到店，需结合具体用户判断）。<br>
-    ② <b>认知基础</b>：观众已知道什么？不熟悉的可用具体情境解释。<br>
-    ③ <b>心理钩子</b>：用真实好奇、反差或共鸣，不用虚假躺赚承诺。<br>
-    ④ <b>可验证</b>：说的事查证过（查官方文档印证），不编。<br>
-    ⑤ <b>低门槛</b>：教人时——降低第一步理解与行动成本，如实说明必要门槛。<br>
-    <b style="color:#ffa94d;">五个判断角度，不是乘法得分或效果保证</b><br>
-    灵感可来自<b>随手刷到</b>、主动查找和真实反馈；先看需求，再看能力。<br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#ffd3a1;font-size:13px;">🤖 <b>AI本行例</b>：作者曾围绕工具使用困难选题；迁移时需核对目标观众是否真有该问题及当下事实。</div>
-  </div>
-  <div id="d2" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #51cf66;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#51cf66;">五段式骨架（教学分享可选结构）</b><br>
-    ① <b>钩子</b>：尽快说清值得看的问题；付出、反差和情绪按素材选用，不硬塞数量。<br>
-    ② <b>证据</b>：紧接真实画面、行动或已核对材料；没有数字不编数字。<br>
-    ③ <b>承诺</b>："都会给到大家"（看完的理由+关注的理由）。<br>
-    ④ <b>条件</b>：说明真实使用门槛和适用范围，不隐瞒成本。<br>
-    ⑤ <b>指令</b>：服务这次目的的下一步；不必每条都引导领取或进群。<br>
-    <b style="color:#51cf66;">辅助：</b>场景倒逼（先有好场景再倒逼内容）；案例衬托内核（用具体行动支持判断，不编案例）；反共识开场（确有被忽略的缺点时再提出）。<br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#b8f2c8;font-size:13px;">😀 <b>虚构情境示意（实体店老板）</b>：钩子"我花了三个月，才搞明白为什么客人进了店就是不买单"→ 证据"这里展示你实际记录的到店变化；没有记录就换真实现场演示"→ 承诺"这些方法我都会拍给大家"→ 条件"但前提你得先把顾客心理搞明白"→ 指令"想要的评论区扣1"。<br><span style="color:#88a;">※ 这是适配示范，不是模板：这个钩子能用，是因为"三个月付出+不买单的反常+实体店老板都有的痛"三样你占全了。你没这段经历、目标人群没这个痛，一开口就穿帮——换成你自己的付出、你自己的反常、你自己客户的痛。借爆款开头可以，但必须说清为什么是它。</span></div>
-  </div>
-  <div id="d3" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #4dabf7;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#4dabf7;">标题三前提 + 跟我有关三源</b><br>
-    前提：标题≠选题（选题影响受众范围，标题影响期待，都不单独保证效果）；标题后置（拍完剪完反复看再提炼）；标题三职能（补全信息/制造期待/承担"总"）。<br>
-    ① <b>认人</b>：熟悉的人物话题（不等于名人推荐或背书）——先吸引眼光，再看你说什么。<br>
-    ② <b>认事</b>：共识话题（"实体店生意越来越难做→换个思路试试"）——大家都知道的事想听你聊。<br>
-    ③ <b>认心</b>（潜在疑问）：观众潜意识里藏着的想法（"都说直播带货赚钱——你心里其实在琢磨：哪有这么容易，肯定有坑吧"）→把这句话变成标题。<br>
-    <b style="color:#4dabf7;">好标题=观众认知内的对象 + 潜意识里的疑问；仅自称“我教你”可能缺可信依据，是否适用看实际证据与受众关系</b><br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#bfd9f5;font-size:13px;">🤖 <b>AI本行例</b>：认人=马斯克放大招·Grok完全上手指南；认事=Claude封号→换个思路试试；认心="一人公司都说赚钱——你心里其实在琢磨肯定有坑吧"。</div>
-  </div>
-  <div id="d4" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #cc99ff;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#cc99ff;">文案转写三原则</b><br>
-    ① <b>逐字稿是弹药库，不是改稿对象</b>：看到好内容先保存逐字稿，不急着改——特意改往往改不好（抓不住重点、怕破坏逐层递进）。<br>
-    ② <b>场景优先匹配</b>：遇到好场景/热点 → 场景是工具 → 翻弹药库找最契合的稿。不是改稿适配你，是场景选稿。<br>
-    ③ <b>借观点不借脉络</b>：注明参考观点来源，用自己的真实材料与判断组织，不冒用他人成果。<br>
-    <b style="color:#cc99ff;">保持逻辑递进，不机械换词；回炉负责完整成稿，不保证复制原片流量</b><br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#e6ccff;font-size:13px;">😀 <b>虚构情境示意（做教培的）</b>：刷到同行讲"怎么跟家长聊续费"火了——把逐字稿存进手机当弹药库；哪天你在机构里正好遇到家长谈续费，翻出这条稿，用你的机构、你的课程、你的口吻重讲一遍。观点一样没关系，场景和脉络是你自己的，仍需注明参考来源，不能冒用对方表达和成果。</div>
-  </div>
-  <div id="d5" style="display:none;width:100%;box-sizing:border-box;background:#0f1526;border:1px solid #ffd34d;border-radius:12px;padding:14px;margin-top:12px;font-size:14px;line-height:1.9;color:#ddd;">
-    <b style="color:#ffd34d;">变现承接（合规路径）</b><br>
-    路径：按需求选择产品或服务，<b>渠道按当前平台规则核对</b>；公开链接也不自动合规。<br>
-    ① <b>预期用户≠实际用户</b>：比较目标与实际反馈，判断观众在要成品、方法还是其他帮助。<br>
-    ② <b>过程终点</b>：结尾给出哪种期待，实际来的人是否与之相符？用反馈核对。<br>
-    ③ <b>三层分离</b>：点赞者≠私信者≠付费者，统计别混为一谈。<br>
-    <b style="color:#ffd34d;">价值观边界即筛选器：不掺和违法（赌球/灰产）——有原则的人更可信</b><br>
-    <div style="background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;color:#ffe9a8;font-size:13px;">😀 <b>虚构情境示意（做生意通用）</b>：拍“怎么靠内容打开销路”或“教你做内容”，可能产生不同期待，需观察真实反馈。想要哪类客户，就展示哪类内容。按所在平台的当前规则选择渠道；主页、群和GitHub都不自动等于合规。</div>
-  </div>
-  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;">
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">总纲</b>：有情、有趣、有人、有事（不必四项齐全）</div>
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">破冰论</b>：让陌生观众尽快理解为什么值得看，方式随内容变化</div>
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">神秘感论</b>：用实际判断和行动建立信任，不贬低教程、不伪装万能</div>
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">观众五类</b>：娱乐、帮助、技术、风险解释等不同期待；不制造虚假幻想</div>
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">选兵器论</b>：多试几个，适合你的才是生产力工具</div>
-    <div style="flex:1;min-width:200px;background:#0f1526;border-radius:10px;padding:12px;font-size:14px;"><b style="color:#ffd34d;">硬边界</b>：不承诺流量 · 不虚构 · 核对渠道 · 不误导</div>
-  </div>
-  <div style="text-align:center;font-size:12px;color:#667;margin-top:16px;">按需：经历提炼选题 · 素材卡保留来源 · 发布反馈检验小调整<br>点击上方模块展开细节 · 经验与推导不等于跨赛道效果保证</div>
-</div>
+<title>炼丹炉全景图</title>
+<style>
+:root{--bg:#101725;--panel:#192439;--deep:#0f1526;--text:#e6ebf4;--muted:#9facbf;--gold:#ffd36a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'PingFang SC','Microsoft YaHei',sans-serif;line-height:1.7}
+main{max-width:1080px;margin:0 auto;padding:24px 16px 40px}
+h1{color:var(--gold);font-size:28px;margin:0}
+.sub{color:var(--muted);margin:4px 0 18px}
+.stance{background:var(--panel);border:2px solid var(--gold);border-radius:14px;padding:14px 16px}
+.stance b{color:var(--gold);font-size:18px;display:block}
+h2{font-size:18px;margin:22px 0 10px}
+.core{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.core li,.foot li{background:var(--deep);border-radius:10px;padding:10px 12px;font-size:14px;color:#c7d0de}
+.core b,.foot b{color:var(--gold);display:block;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--panel);border:2px solid var(--c);border-radius:14px;padding:14px;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.card .name{color:var(--c);font-weight:700;font-size:17px;display:block}
+.card .hint{color:var(--muted);font-size:13px}
+.detail{background:var(--deep);border:1px solid var(--c);border-radius:12px;padding:12px 16px;margin-top:12px}
+.detail h3{color:var(--c);margin:0 0 6px}
+.detail ul{margin:0;padding-left:20px}
+.deliver{color:var(--c);margin:8px 0 0}
+.case{background:#1a2a3a;border-radius:8px;padding:8px 10px;margin-top:8px;font-size:14px}
+.case span{color:var(--muted);font-size:13px}
+.foot{list-style:none;padding:0;display:grid;gap:8px}
+.note{color:#6f7d93;font-size:12px;text-align:center;margin-top:18px}
+</style>
+</head>
+<body>
+<main>
+<h1>太上老君 · AI炼丹炉</h1>
+<p class="sub">把别人的爆款、你的经历、手边的场景，炼成只属于你的内容</p>
+<div class="stance"><b>AI 先下判断，你来校准</b>每次落到一件今天能做的事；换个人还成立的建议，就是泛货，重做。</div>
+<h2>炉心：七条底层判断</h2>
+<ul class="core"><li><b>破冰先于一切</b>陌生人只给你一两秒，先让他感兴趣，信任靠后面的证据挣</li><li><b>观众在想什么</b>没意识到的痛点、对你的防御、一厢情愿的想象</li><li><b>用事件衬托内核</b>直白说没人信，让观众从一件事里自己看出来</li><li><b>判断力胜过教程</b>热点是载体，判断是内容；只露果，不穷尽</li><li><b>钩子马上兑现</b>下一秒就用画面或事件接住，接住它的又是下一个钩子</li><li><b>展示什么，吸引什么人</b>成品招要成品的，过程招学习者，忙碌招求职者</li><li><b>适合自己的才是兵器</b>对标、工具、表达都放进自己的条件里掂量</li></ul>
+<h2>六个模块（按需调用，不必从头走完）</h2>
+<div class="cards"><button class="card" style="--c:#ff898d" aria-controls="d0" aria-expanded="false" onclick="tgl(0)"><span class="name">01 选材 · 选兵器</span><span class="hint">点击展开</span></button><button class="card" style="--c:#ffbd72" aria-controls="d1" aria-expanded="false" onclick="tgl(1)"><span class="name">02 看火 · 选题决策链</span><span class="hint">点击展开</span></button><button class="card" style="--c:#78dcad" aria-controls="d2" aria-expanded="false" onclick="tgl(2)"><span class="name">03 开炉 · 开头与结构</span><span class="hint">点击展开</span></button><button class="card" style="--c:#c8a4ff" aria-controls="d3" aria-expanded="false" onclick="tgl(3)"><span class="name">04 回炉 · 完整成稿</span><span class="hint">点击展开</span></button><button class="card" style="--c:#8ec9ff" aria-controls="d4" aria-expanded="false" onclick="tgl(4)"><span class="name">05 收丹 · 标题</span><span class="hint">点击展开</span></button><button class="card" style="--c:#ffd36a" aria-controls="d5" aria-expanded="false" onclick="tgl(5)"><span class="name">06 成丹 · 变现承接</span><span class="hint">点击展开</span></button></div>
+<section id="d0" class="detail" style="--c:#ff898d" hidden><h3>01 选材 · 选兵器</h3><ul><li>复读关：心里跟着念一句，像不像自己的话</li><li>客户关：站在观众那边，说出他为什么看下去</li><li>替换关：换成你的条件，意思和证据还在吗</li></ul><p class="deliver">交付：借哪个机制、换掉什么、最小试拍动作</p><p class="case">柳爷的案例：柳爷找对标只看条件一致的口播号；主动搜的常不对，无意刷到、想一直看的才是。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section><section id="d1" class="detail" style="--c:#ffbd72" hidden><h3>02 看火 · 选题决策链</h3><ul><li>起点 → 观众最关心什么 → 你拿什么接住</li><li>靠哪种吸引力：娱乐 / 帮助 / 实力 / 下危机</li><li>会招来谁？开头的承诺拿什么兑现？</li></ul><p class="deliver">交付：1–3 个私人定制方向，推荐一个</p><p class="case">柳爷的案例：世界杯：抢热点 → 球迷最关心比分 → 用 AI 做预测工作台 → 摊开思考维度。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section><section id="d2" class="detail" style="--c:#78dcad" hidden><h3>03 开炉 · 开头与结构</h3><ul><li>一句话里装几个好懂的信息，完成破冰</li><li>勾证衔接，最好接成钩子链</li><li>收尾给看完的理由和关注的理由，然后干脆结束</li></ul><p class="deliver">交付：第一句、证据画面、推进、收尾和理由</p><p class="case">柳爷的案例：机场：“刚下飞机遇到件恶心事” → 马上接一块广告牌 → 广告牌又是下一个钩子。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section><section id="d3" class="detail" style="--c:#c8a4ff" hidden><h3>04 回炉 · 完整成稿</h3><ul><li>逐字稿是弹药库，先存不急着改</li><li>先有场景和目的，再翻弹药库找观点</li><li>借观点不借脉络；AI 初稿按改稿六刀做减法</li></ul><p class="deliver">交付：可以直接念的完整稿</p><p class="case">柳爷的案例：柳爷改 AI 初稿时，信息大多保留，动作几乎全是“删”。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section><section id="d4" class="detail" style="--c:#8ec9ff" hidden><h3>05 收丹 · 标题</h3><ul><li>标题不等于选题，剪完再想</li><li>补信息 / 给期待 / 替开头当“总”</li><li>跟我有关：认人、认事、认心，用陌生人的眼睛检查</li></ul><p class="deliver">交付：需要几个给几个，每个说清“有关”在哪</p><p class="case">柳爷的案例：“一人公司有个致命的缺点”：把观众心里那句“肯定有坑”变成标题。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section><section id="d5" class="detail" style="--c:#ffd36a" hidden><h3>06 成丹 · 变现承接</h3><ul><li>点赞、咨询、成交分开看</li><li>预期用户 ≠ 实际用户：纠偏、顺势，或拒绝</li><li>一个能兑现的交付，只走平台允许的承接</li></ul><p class="deliver">交付：一个交付、承接路径、交付成本与观察点</p><p class="case">柳爷的案例：一人公司招来求职者：可以纠偏，也可以顺势为他们设计一个交付。<br><span>学的是推理过程，换成你自己的场景和材料重新推一遍。</span></p></section>
+<h2>贯穿全程</h2>
+<ul class="foot"><li><b>底味访谈</b>问决定，不问定义；你替用户总结，用户来确认</li><li><b>反馈复盘</b>沿链条找第一个偏掉的环节，再选纠偏或顺势</li><li><b>底线</b>不编经历和数字 · 钩子要兑现 · 合规承接 · 不服务害人的需求</li></ul>
+<p class="note">方法来自柳爷做内容的经验，不是流量保证。</p>
+</main>
 <script>
-(function(){
-  var o=document.querySelectorAll('[onclick^="tgl"]');
-  for(var i=0;i<o.length;i++){o[i].setAttribute('role','button');o[i].setAttribute('tabindex','0');}
-  window.tgl=function(n){
-    var d=document.getElementById('d'+n);
-    if(!d)return;
-    var all=['d0','d1','d2','d3','d4','d5'];
-    for(var j=0;j<all.length;j++){var e=document.getElementById(all[j]);if(e&&e!==d)e.style.display='none';}
-    d.style.display=(d.style.display==='none')?'block':'none';
-  };
-})();
+function tgl(n){
+  document.querySelectorAll('.detail').forEach(function(d,i){
+    var open = i===n && d.hidden;
+    d.hidden = !open;
+    document.querySelectorAll('.card')[i].setAttribute('aria-expanded', open);
+  });
+}
 </script>
+</body>
 </html>

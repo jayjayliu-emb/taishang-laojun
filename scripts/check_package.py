@@ -4,15 +4,18 @@ import json
 import re
 import shutil
 import tempfile
-from build_views import ROOT, ORDER, render
+import build_mindmap
+import build_views
+from build_views import ORDER
 
 def check():
+    ROOT = build_views.ROOT
     errors = []
     market = json.loads((ROOT/'.claude-plugin/marketplace.json').read_text(encoding="utf-8"))
     plugin = json.loads((ROOT/'.claude-plugin/plugin.json').read_text(encoding="utf-8"))
     if not isinstance(market.get('owner'), dict) or not isinstance(market.get('plugins'), list):
         errors.append('Invalid marketplace owner/plugins')
-    if market['plugins'][0]['name'] != plugin['name'] or market['plugins'][0]['version'] != plugin['version']:
+    elif market['plugins'][0]['name'] != plugin['name'] or market['plugins'][0]['version'] != plugin['version']:
         errors.append('Plugin identity/version mismatch')
     with tempfile.TemporaryDirectory() as tmp:
         installed = Path(tmp)/'skills'
@@ -30,9 +33,15 @@ def check():
                 dest = (path.parent/target.split('#')[0]).resolve()
                 if not dest.is_relative_to(installed.resolve()) or not dest.is_file():
                     errors.append(f'Broken isolated-install reference: {path.relative_to(installed)} -> {target}')
-    for filename, content in [('docs/formulas.md', render()), ('bot-prompt/liuye-bot-prompt.md', render(True))]:
-        if (ROOT/filename).read_text(encoding="utf-8") != content:
+    generated = {name: build() for name, build in build_views.GENERATED.items()}
+    generated.update({name: render() for name, render in build_mindmap.VIEWS.items()})
+    for filename, content in generated.items():
+        if not (ROOT/filename).is_file() or (ROOT/filename).read_text(encoding="utf-8") != content:
             errors.append(f'Stale generated view: {filename}')
+    entry = (ROOT/'skills/taishang-laojun/SKILL.md').read_text(encoding="utf-8")
+    for ref in build_views.REFERENCES:
+        if f'references/{ref}.md' not in entry:
+            errors.append(f'Entry skill does not route to reference: {ref}')
     for name in ['LICENSE', 'THIRD-PARTY-NOTICES.md']:
         if (ROOT/'skills/taishang-laojun/references'/name).read_bytes() != (ROOT/name).read_bytes():
             errors.append(f'Stale distribution notice: {name}')
@@ -46,7 +55,7 @@ def check():
                     errors.append(f'Broken repository link: {path.relative_to(ROOT)} -> {target}')
     if errors:
         raise SystemExit('\n'.join(errors))
-    print('PASS: 7 skill identities, isolated copied-package references, repository links, synchronized views and notices')
+    print('PASS: 7 skill identities, isolated copied-package references, repository links, synchronized views, mindmap and notices')
 
 if __name__ == '__main__':
     check()
