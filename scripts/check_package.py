@@ -53,9 +53,20 @@ def check():
             if '://' not in target and not target.startswith('#'):
                 if not (path.parent/target.split('#')[0]).exists():
                     errors.append(f'Broken repository link: {path.relative_to(ROOT)} -> {target}')
+    # Skill text teaches the AI how to talk, so it must pass the same fake-contrast gate.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('ai_tell_linter', ROOT/'skills/taishang-laojun/scripts/ai_tell_linter.py')
+    linter = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(linter)
+    allow = linter.load_allow(str(ROOT/'scripts/ai_tell_allow.txt'))
+    for path in sorted((ROOT/'skills').rglob('*.md')):
+        if path.name in ('deai-rulebook.md', 'THIRD-PARTY-NOTICES.md', 'LICENSE'):
+            continue  # the rulebook quotes the patterns it bans
+        for hit in linter.analyze(path.read_text(encoding="utf-8"), allow)['hard_blocks']:
+            errors.append(f"Fake-contrast shell in skill text: {path.relative_to(ROOT)}:{hit['line']} {hit['text'][:30]}")
     if errors:
         raise SystemExit('\n'.join(errors))
-    print('PASS: 7 skill identities, isolated copied-package references, repository links, synchronized views, mindmap and notices')
+    print('PASS: 7 skill identities, isolated copied-package references, repository links, synchronized views, mindmap, notices and fake-contrast gate')
 
 if __name__ == '__main__':
     check()

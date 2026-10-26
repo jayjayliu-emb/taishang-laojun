@@ -90,3 +90,15 @@ SOFTWARE.
 经历提炼、轻量素材积累与持续复盘的补强，参考了 Dan Koe 的 Turning Your Experiences Into Content、The Content Synthesis System、Iterating Your Content Flow 等课程章节；维护验收思路亦参考且曼 AI 产品课的用户访谈与效果评测内容。参考依据为用户提供的未经人工精校转写，未逐句核对原始音视频。
 
 本轮为结合柳爷方法独立撰写的操作规则，不附课程转写、课件或原模板，不将外部作者经历标成柳爷成果，也不声称获得课程公开分发授权或作者背书。课程启发不等于这些规则已在所有赛道验证有效。
+
+## 5. 去 AI 味规则与检测脚本（0.6.0）
+
+`skills/taishang-laojun/references/deai-rulebook.md` 的“假对比”“伪深度路标”“盖住原稿重说”等检查与修法，`skills/taishang-laojun/scripts/ai_tell_linter.py` 的检测清单，来自柳爷自用的去 AI 味工具，该工具的规则参考了以下 MIT 项目的思路（2026-10-26 核对许可为 MIT）：
+
+- LifelongLazyLearner/qu-ai-wei（Copyright (c) 2026 @LifelongLazyLearner）：https://github.com/LifelongLazyLearner/qu-ai-wei
+- Hyacehila/humanizer-zh-next（Copyright (c) 2026 humanizer-zh-next contributors）：https://github.com/Hyacehila/humanizer-zh-next
+- meikis/remove-ai-flavor-writing-skill（Copyright (c) 2026 B1lli）：https://github.com/meikis/remove-ai-flavor-writing-skill
+- evelynyaxueke/anti-ai-writing-kit-zh（Copyright (c) 2026 Evelyn Ke）：https://github.com/evelynyaxueke/anti-ai-writing-kit-zh
+- 以及上文第 1、2 项的 blader/humanizer、op7418/Humanizer-zh。
+
+本仓库借用的是识别思路，规则用炼丹炉自己的语言重写，没有复制上述项目的原文。上述项目均以 MIT License 发布，许可全文与上文第 1 项相同，以各项目所附原始版权声明为准。

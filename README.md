@@ -60,7 +60,7 @@
 
 结构设计参考 [dontbesilent/dbskill](https://github.com/dontbesilent2025/dbskill)。去AI味观察框架参考 humanizer / Humanizer-zh，保留[第三方声明](THIRD-PARTY-NOTICES.md)。
 
-规则维护在 skills 及 references。修改后运行 `python3 scripts/build_views.py` 同步人读版、两份 Bot 和全景图（全景图内容在 `scripts/build_mindmap.py` 里维护），再运行 `python3 scripts/check_package.py` 检查分发完整性。
+规则维护在 skills 及 references。修改后运行 `python3 scripts/build_views.py` 同步人读版、两份 Bot 和全景图（全景图内容在 `scripts/build_mindmap.py` 里维护），再运行 `python3 scripts/check_package.py` 检查分发完整性。检查会用 `skills/taishang-laojun/scripts/ai_tell_linter.py` 扫技能文字里的假对比句式，确实需要保留的（引用原话、纠正事实）写进 `scripts/ai_tell_allow.txt`。
 
 ## 许可
 
