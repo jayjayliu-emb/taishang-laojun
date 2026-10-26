@@ -15,7 +15,7 @@ def body(path):
     return text.strip()
 
 REFERENCES = ['core-mind', 'case-book', 'flavor-interview', 'material-card', 'deai-rulebook', 'edit-six-cuts', 'feedback-review']
-LITE = ['taishang-laojun', 'core-mind'] + ORDER[1:]
+LITE = ['taishang-laojun', 'core-mind', 'flavor-interview'] + ORDER[1:]
 LICENSE_NOTE = ('本体版权归柳爷，许可 CC BY-NC 4.0：https://creativecommons.org/licenses/by-nc/4.0/ 。'
                 '项目：https://github.com/liuhaisi2026212-maker/taishang-laojun 。')
 
@@ -25,7 +25,8 @@ def sources(lite=False):
     paths += [ROOT / 'skills/taishang-laojun/references' / (name + '.md') for name in REFERENCES]
     if lite:
         paths = [p for p in paths if (p.parent.name if p.name == 'SKILL.md' else p.stem) in LITE]
-        paths.insert(1, paths.pop(-1))  # core-mind right after the entry
+        refs = [p for p in paths if p.name != 'SKILL.md']
+        paths = paths[:1] + refs + [p for p in paths[1:] if p not in refs]  # entry, core-mind, interview, modules
     return paths
 
 
@@ -46,8 +47,8 @@ def render(bot=False, lite=False):
         parts.append(re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, body(path)))
     if lite:
         heading = ('# 太上老君·AI炼丹炉：Bot精简版\n\n'
-                   '适合系统提示词有长度限制的智能体（如各类 Bot 的人设设定框）。包含总入口、炉心和六个模块；'
-                   '案例库、访谈、去AI味、改稿六刀和复盘细则在完整版 Bot 文件里，可作为知识库附件一起上传。'
+                   '适合系统提示词有长度限制的智能体（如各类 Bot 的人设设定框）。包含总入口、炉心、底味访谈和六个模块；'
+                   '推理示范、去AI味、改稿六刀和复盘细则在完整版 Bot 文件里，可作为知识库附件一起上传。'
                    '本文件由技能源生成，不要单独维护另一套规则。\n\n')
         parts.append('## 许可\n\n' + LICENSE_NOTE + '第三方声明见完整版。')
     elif bot:

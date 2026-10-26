@@ -4,10 +4,10 @@
 <rect width="1200" height="1438" rx="24" fill="#101725"/>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
 <text x="44" y="66" font-size="42" fill="#ffd36a" font-weight="700">太上老君 · AI炼丹炉</text>
-<text x="44" y="106" font-size="23" fill="#d4dce9" font-weight="400">把别人的爆款、你的经历、手边的场景，炼成只属于你的内容</text>
+<text x="44" y="106" font-size="23" fill="#d4dce9" font-weight="400">把别人的爆款，炼成你自己的视频</text>
 <rect x="40" y="136" width="1120" height="96" rx="16" fill="#192439" stroke="#ffd36a"/>
-<text x="64" y="174" font-size="27" fill="#ffd36a" font-weight="700">AI 先下判断，你来校准</text>
-<text x="64" y="210" font-size="21" fill="#d4dce9" font-weight="400">每次落到一件今天能做的事；换个人还成立的建议，就是泛货，重做。</text>
+<text x="64" y="174" font-size="27" fill="#ffd36a" font-weight="700">先认识你，再炼你的丹</text>
+<text x="64" y="210" font-size="21" fill="#d4dce9" font-weight="400">先聊透你是谁、想吸引谁，再找对标、拆爆款，用你自己的事接住它。AI 下判断，你来校准。</text>
 <text x="44" y="268" font-size="25" fill="#eef3fc" font-weight="600">炉心：七条底层判断（每个模块都从这里推）</text>
 <rect x="40" y="290" width="550" height="62" rx="16" fill="#192439" stroke="#3a4a66"/>
 <text x="58" y="317" font-size="21" fill="#ffd36a" font-weight="650">1. 破冰先于一切</text>
@@ -31,11 +31,11 @@
 <text x="58" y="539" font-size="21" fill="#ffd36a" font-weight="650">7. 适合自己的才是兵器</text>
 <text x="58" y="563" font-size="16" fill="#b8c3d6" font-weight="400">对标、工具、表达都放进自己的条件里掂量</text>
 <rect x="40" y="612" width="550" height="206" rx="16" fill="#192439" stroke="#ff898d"/>
-<text x="62" y="650" font-size="26" fill="#ff898d" font-weight="650">01 选材 · 选兵器</text>
-<text x="62" y="688" font-size="18" fill="#d4dce9" font-weight="400">复读关：心里跟着念一句，像不像自己的话</text>
-<text x="62" y="719" font-size="18" fill="#d4dce9" font-weight="400">客户关：站在观众那边，说出他为什么看下去</text>
-<text x="62" y="750" font-size="18" fill="#d4dce9" font-weight="400">替换关：换成你的条件，意思和证据还在吗</text>
-<text x="62" y="792" font-size="18" fill="#ff898d" font-weight="400">交付：借哪个机制、换掉什么、最小试拍动作</text>
+<text x="62" y="650" font-size="26" fill="#ff898d" font-weight="650">01 选材 · 找对标拆爆款</text>
+<text x="62" y="688" font-size="18" fill="#d4dce9" font-weight="400">找条件一致、想吸引的人也一致的对标</text>
+<text x="62" y="719" font-size="18" fill="#d4dce9" font-weight="400">拆开看它为什么爆：撑着它的是哪一两个机制</text>
+<text x="62" y="750" font-size="18" fill="#d4dce9" font-weight="400">复读、客户、替换三关掂量，用你自己的事接住</text>
+<text x="62" y="792" font-size="18" fill="#ff898d" font-weight="400">交付：保留什么、换掉什么、用你的哪件事接住</text>
 <rect x="610" y="612" width="550" height="206" rx="16" fill="#192439" stroke="#ffbd72"/>
 <text x="632" y="650" font-size="26" fill="#ffbd72" font-weight="650">02 看火 · 选题决策链</text>
 <text x="632" y="688" font-size="18" fill="#d4dce9" font-weight="400">起点 → 观众最关心什么 → 你拿什么接住</text>
@@ -66,7 +66,7 @@
 <text x="632" y="1167" font-size="18" fill="#d4dce9" font-weight="400">预期用户 ≠ 实际用户：纠偏、顺势，或拒绝</text>
 <text x="632" y="1198" font-size="18" fill="#d4dce9" font-weight="400">一个能兑现的交付，只走平台允许的承接</text>
 <text x="632" y="1240" font-size="18" fill="#ffd36a" font-weight="400">交付：一个交付、承接路径、交付成本与观察点</text>
-<text x="44" y="1292" font-size="19" fill="#9facbf" font-weight="400">底味访谈：问决定，不问定义；你替用户总结，用户来确认</text>
+<text x="44" y="1292" font-size="19" fill="#9facbf" font-weight="400">第一步：底味访谈：让你越聊越想说；问决定不问定义，AI 替你总结成使用者档案</text>
 <text x="44" y="1326" font-size="19" fill="#9facbf" font-weight="400">反馈复盘：沿链条找第一个偏掉的环节，再选纠偏或顺势</text>
 <text x="44" y="1360" font-size="19" fill="#ffbd72" font-weight="400">底线：不编经历和数字 · 钩子要兑现 · 合规承接 · 不服务害人的需求</text>
 <text x="44" y="1404" font-size="16" fill="#6f7d93" font-weight="400">方法来自柳爷做内容的经验，不是流量保证。 点击图片进入可展开的交互版。</text>
