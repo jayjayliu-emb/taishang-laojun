@@ -66,7 +66,7 @@ def check():
             errors.append(f"Fake-contrast shell in skill text: {path.relative_to(ROOT)}:{hit['line']} {hit['text'][:30]}")
     if errors:
         raise SystemExit('\n'.join(errors))
-    print('PASS: 7 skill identities, isolated copied-package references, repository links, synchronized views, mindmap, notices and fake-contrast gate')
+    print(f'PASS: {len(ORDER)} skill identities, isolated copied-package references, repository links, synchronized views, mindmap, notices and fake-contrast gate')
 
 if __name__ == '__main__':
     check()

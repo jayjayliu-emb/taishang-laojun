@@ -2,7 +2,7 @@
 
 **把别人的爆款，炼成你自己的视频。先认识你，再炼你的丹。**
 
-[![太上老君炼丹炉全景图：AI 先下判断、七条底层判断贯穿六个模块](docs/mindmap/overview.svg)](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)
+[![太上老君炼丹炉全景图：AI 先下判断、七条底层判断贯穿七个模块](docs/mindmap/overview.svg)](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)
 
 *上图可直接查看；点击图片进入可展开的交互版。*
 
@@ -44,13 +44,13 @@
 | 展示什么，吸引什么人 | 成品招要成品的，过程招学习者，忙碌招求职者 |
 | 适合自己的才是兵器 | 对标、工具、表达都放进自己的条件里掂量 |
 
-六个模块：选材（找对标、拆爆款）、看火（选题决策链）、开炉（开头与结构）、回炉（完整成稿）、收丹（标题）、成丹（变现承接）。每一条判断怎么一步步用到一条具体视频上，见[推理示范](skills/taishang-laojun/references/case-book.md)。
+七个模块：选材（找对标、拆爆款）、看火（选题决策链）、丹方（系列策划）、开炉（开头与结构）、回炉（完整成稿）、收丹（标题）、成丹（变现承接）。每一条判断怎么一步步用到一条具体视频上，见[推理示范](skills/taishang-laojun/references/case-book.md)。
 
 ## 下载后给智能体什么
 
 **只想给一份文件：** [Bot版完整流程](bot-prompt/liuye-bot-prompt.md)。智能体的设定框有长度限制时，用[Bot精简版](bot-prompt/liuye-bot-lite.md)当设定，完整版当知识库附件。
 
-**支持技能文件的智能体：** 整个仓库作为项目，或一起安装 skills 下七个子目录（含参考文件）。详见[安装说明](docs/install-guide.md)。不假定所有宿主都兼容，实测边界见[验证说明](docs/validation.md)。
+**支持技能文件的智能体：** 整个仓库作为项目，或一起安装 skills 下八个子目录（含参考文件）。详见[安装说明](docs/install-guide.md)。不假定所有宿主都兼容，实测边界见[验证说明](docs/validation.md)。
 
 方法阅读：[配方全集](docs/formulas.md)；[炉心](skills/taishang-laojun/references/core-mind.md)；[案例库](skills/taishang-laojun/references/case-book.md)；[访谈框架](docs/flavor-interview.md)；[去AI味](docs/deai-rulebook.md)。[本地全景图](docs/mindmap/炼丹炉全景图.html)可下载后在浏览器打开；[在线预览](https://liuhaisi2026212-maker.github.io/taishang-laojun/mindmap/preview.html)展示远程 main，未发布的本地修复不会出现在该页面。
 

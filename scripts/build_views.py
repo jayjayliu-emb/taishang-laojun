@@ -6,7 +6,7 @@ import re
 import build_mindmap
 
 ROOT = Path(__file__).resolve().parents[1]
-ORDER = ['taishang-laojun', 'tslj-select', 'tslj-idea', 'tslj-open', 'tslj-script', 'tslj-title', 'tslj-monetize']
+ORDER = ['taishang-laojun', 'tslj-select', 'tslj-idea', 'tslj-series', 'tslj-open', 'tslj-script', 'tslj-title', 'tslj-monetize']
 
 def body(path):
     text = path.read_text(encoding="utf-8")
@@ -47,7 +47,7 @@ def render(bot=False, lite=False):
         parts.append(re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, body(path)))
     if lite:
         heading = ('# 太上老君·AI炼丹炉：Bot精简版\n\n'
-                   '适合系统提示词有长度限制的智能体（如各类 Bot 的人设设定框）。包含总入口、炉心、底味访谈和六个模块；'
+                   '适合系统提示词有长度限制的智能体（如各类 Bot 的人设设定框）。包含总入口、炉心、底味访谈和七个模块；'
                    '推理示范、去AI味、改稿六刀和复盘细则在完整版 Bot 文件里，可作为知识库附件一起上传。'
                    '本文件由技能源生成，不要单独维护另一套规则。\n\n')
         parts.append('## 许可\n\n' + LICENSE_NOTE + '第三方声明见完整版。')

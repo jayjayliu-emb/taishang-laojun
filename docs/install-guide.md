@@ -6,7 +6,7 @@
 
 下载/克隆整个仓库作为项目打开，输入“使用炼丹炉，我想拍视频但不知道拍什么”。根目录 AGENTS.md 指向总入口。已有稿件可直接给稿并说只改标题。
 
-需要安装到其他项目时，把 `skills/` **下面的七个子文件夹**一并放进宿主配置的技能目录，保持七个文件夹为同级。每个文件夹中的 references 也必须一起保留；不要再套一层 skills 文件夹。不得覆盖已有同名自定义版本，先备份。只装总入口不够完整使用。
+需要安装到其他项目时，把 `skills/` **下面的八个子文件夹**一并放进宿主配置的技能目录，保持八个文件夹为同级。每个文件夹中的 references 也必须一起保留；不要再套一层 skills 文件夹。不得覆盖已有同名自定义版本，先备份。只装总入口不够完整使用。
 
 ## Claude Code
 
@@ -24,17 +24,17 @@ claude plugin marketplace add liuhaisi2026212-maker/taishang-laojun
 claude plugin install taishang-laojun@taishang-laojun
 ```
 
-也可把七个子文件夹复制到 Claude Code 配置的 skills 目录。完整项目使用 CLAUDE.md 入口，不能假设它自动读取 AGENTS.md。
+也可把八个子文件夹复制到 Claude Code 配置的 skills 目录。完整项目使用 CLAUDE.md 入口，不能假设它自动读取 AGENTS.md。
 
 参考：[Claude marketplace 文档](https://code.claude.com/docs/en/plugin-marketplaces)。本地结构校验命令：`claude plugin validate .claude-plugin/marketplace.json` 和 `claude plugin validate .claude-plugin/plugin.json`。结构通过不等于真实宿主使用验收。
 
 ## 豆包、WorkBuddy、Grok 等
 
-本版不声称这些客户端自动发现技能的路径已实测。若客户端明确支持导入 Skills，按其说明导入全部七个目录并检查能否读取引用文件；没有这个能力时，用下一节的 Bot 版。不得仅凭生成了三个选题判断安装成功。
+本版不声称这些客户端自动发现技能的路径已实测。若客户端明确支持导入 Skills，按其说明导入全部八个目录并检查能否读取引用文件；没有这个能力时，用下一节的 Bot 版。不得仅凭生成了三个选题判断安装成功。
 
 ## 只想给一个智能体一份文件
 
-使用 `bot-prompt/liuye-bot-prompt.md`。它包含总入口、炉心、案例库、六模块和全部参考正文，不依赖仓库文件。设定框装不下时，把 `bot-prompt/liuye-bot-lite.md`（总入口、炉心、底味访谈、六模块）放进设定，完整版作为知识库附件上传。粘贴到支持的系统提示词位置，或作为参考文件附上并明确要求按它工作。宿主若截断长度、不能遵循文件或不支持持久上下文，效果可能受限；普通附件不等于系统级安装。
+使用 `bot-prompt/liuye-bot-prompt.md`。它包含总入口、炉心、推理示范、七个模块和全部参考正文，不依赖仓库文件。设定框装不下时，把 `bot-prompt/liuye-bot-lite.md`（总入口、炉心、底味访谈、七个模块）放进设定，完整版作为知识库附件上传。粘贴到支持的系统提示词位置，或作为参考文件附上并明确要求按它工作。宿主若截断长度、不能遵循文件或不支持持久上下文，效果可能受限；普通附件不等于系统级安装。
 
 ## 验证是否可用
 
